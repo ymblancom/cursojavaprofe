@@ -8,7 +8,7 @@ public class PrimeraClase {
 		String nombre = "Jose Luis";
 		String apellidos = "Llorente";
 		System.out.println(nombre);
-		System.out.println("Hola MUNDO2");
+		System.out.println("Hola MUNDOS3");
 		
 		
 	}
