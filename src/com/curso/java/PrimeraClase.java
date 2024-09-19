@@ -8,6 +8,7 @@ public class PrimeraClase {
 		String nombre = "Jose Luis";
 		String apellidos = "Llorente";
 		System.out.println(nombre);
+		System.out.println("Hola Mundo");
 		
 		
 	}
