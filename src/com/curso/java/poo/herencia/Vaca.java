@@ -18,14 +18,14 @@ public class Vaca extends Animal{
 	}
 	
 	public void mugir() {
-		System.out.println("La vaca "+ this.getNombre() +" está mugiendo");
+		System.out.println("La vaca "+ getNombre() +" está mugiendo");
 	}
 
 	@Override
 	public void comer() {
 		System.out.println("La vaca "+ getNombre() + " está pastando");
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Vaca [tipo=" + tipo + ", id=" + getId() + ", nombre=" + getNombre() + "]";

@@ -1,0 +1,96 @@
+EjercicioForCoches OK
+============================================================
+Pedir numero de coches
+Por cada coche pedir su velocidad
+Indicar a qué velocidad va el coche más rápido
+
+
+EjercicioForTenistas OK
+============================================================
+Pedir número de tenistas, por cada tenista pedir su nombre y la posición que ocupa en el ranking. 
+Indicar cuantos tenistas hay entre los 10 primeros
+y el nombre del mejor tenista
+
+
+EjercicioForFibonacci (Alto) OK
+============================================================
+Pedir número de elementos de la serie de fibonacci a mostrar.
+La serie de Fibonacci es 0,1,1,2,3,5,8,13,21,34,...
+Si introduces 5, la secuencia a mostrar sería:  0,1,1,2,3 
+
+EjercicioForTablas OK
+============================================================
+Mostrar la tabla de multiplicar de los números del 1 al 10 OK
+
+
+EjercicioForTablas (Medio-Alto)
+============================================================
+Mostra los numero pares del 2 al 100 y los impares del 99 al 1
+2,99
+4,97
+6,95
+....
+
+
+Usando bucle while
+
+Conjetura Collatz (Fácil) OK
+===============================================================
+Todo número entero positivo llegará siempre a ser UNO siguiendo las siguientes reglas matemáticas
+
+Se pide un numero
+
+Si el número es par: Dividimos entre dos
+Si el número es impar: Multiplicados por tres y sumamos 1
+
+Repetir mientras que el numero sea distinto de 1
+
+
+Número 6
+
+
+Ejercicio pintar cuadrado OK
+===============================================================
+Pedir el tamaño de un lado de un cuadrado: 
+(Medio)
+*  *  *  *
+*  *  *  *
+*  *  *  *
+*  *  *  *
+
+(Dificil)
+*  *  *  *
+*        *
+*        *
+*  *  *  *
+
+
+Ejercicio pintar menu OK
+================================================================
+
+(Facil)
+1. Pintar cuadrado
+2. Validar email
+3. Crear alumno
+4. Salir
+
+Selecciona una opción
+
+Si se pulsa la opcion 1,2 o 3 que nos indique la opción seleccionada, y que vuelva a pintar el menú
+Si se selecciona la opcion 4, me dice Adios! y no se vuelve a mostrar el menú (Medio)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

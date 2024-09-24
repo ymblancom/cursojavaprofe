@@ -10,7 +10,6 @@ public class Alumno {
 	static int contador;
 	//Constructores
 	public Alumno() {
-		
 	}
 	
 	public Alumno(String dni, String nombre, String apellidos) {

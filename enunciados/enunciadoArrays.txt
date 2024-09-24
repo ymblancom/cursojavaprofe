@@ -1,0 +1,40 @@
+EjercicioArrays1
+==========================================================
+Definir un array de enteros de longitud 3
+Vais a dar los valores de cada posición de una en una
+Mostrar 
++ Uno por uno
++ Desde un bucle
+
++ Media de todos los numeros que hay en el array
+
+EjercicioArrays2
+==========================================================
+Definir un array de nombres de alumnos de longitud (se pregunta). Mostrar solo aquellos alumnos que contengan una a en el nombre
+Longitud de un array se puede sabe con length
+
+EjercicioArrays3
+==========================================================
+Pedir cuantos números se van a guardar
+Pedir los valores de cada número
+Mostrar todos los números introducidos
+Reordenar los números de manera inversa en el array
+Mostrar de nuevo todos los números
+
+
+EjercicioArrays4
+==========================================================
++ Definir array bidimensional de enteros de 2x3
++ Dar los valores de cada posición de una en una
++ Mostrar todos los datos en formato matriz con dos for anidados
++ Hacer los mismo con 2 foreach
+
+
+EjercicioArrays5
+==========================================================
+De una matriz 4x4
+Pedir los datos de la matriz
+Sacar los números de la diagonal
+Invertir la diagonal y mostrar la matriz
+
+

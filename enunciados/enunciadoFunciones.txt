@@ -1,0 +1,30 @@
+
+Funciones1
+==================================================================
+definir funcion que recibe un String y devuelve la longitud del String
+
+Funciones2
+==================================================================
+Funcion que recibe un numero y un texto y me va a pintar el texto que le pasemos el numéro de veces indicado por el parámetro numérico
+
+Funciones3
+==================================================================
+Funcion a la que le paso un numero y me pinta la tabla de multiplicar de ese numero
+
+
+Utilidades
+==================================================================
+Crear paquete com.curso.java.utils crear la clase Utilidades, esa clase no tiene main
+
+Les pasamos un texto que es la pregunta que se le hace al usuario y 
++ pideDatoNumerico 
++ pideDatoString
+
+Como pasar varios String y que pinte la información que le pasamos. Como en un solo parámetro recibir todas las opciones del menu
++ pintaMenu()
+
+
+Funcion a la que le paso un numero y me pinta la tabla de multiplicar de ese numero
+
+
+
