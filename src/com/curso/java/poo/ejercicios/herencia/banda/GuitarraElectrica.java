@@ -1,7 +1,7 @@
 package com.curso.java.poo.ejercicios.herencia.banda;
 
-public class GuitarraElectrica extends Guitarra {
-	double potencia;
+public final class GuitarraElectrica extends Guitarra {
+	private double potencia;
 
 	public GuitarraElectrica(String nombre, String tipo, boolean afinado, double potencia) {
 		super(nombre, tipo, afinado);
