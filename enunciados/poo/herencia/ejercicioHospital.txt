@@ -11,7 +11,7 @@ Clase Paciente hereda de Persona
 	
 Clase Enfermo hereda de Persona 
 	+ enfermedad
-	+ comer() --> Paciente ... comiendo en la habitación
+	+ comer() --> Enfermo ... comiendo en la habitación
 
 Habitacion
 	+ numero
@@ -35,7 +35,7 @@ Doctor hereda EmpleadosHospital
 	+ diagnosticarPaciente(Paciente)// 
 			Si el paciente está enfermo --> 1-10  
 			si > 8 el paciente está enfermo
-			devolver un objeto Enfermo 
+				devolver un objeto Enfermo 
 			
 			
 Hospital
