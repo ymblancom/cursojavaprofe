@@ -1,0 +1,54 @@
+Producto
+	ref
+	precio
+
+	Libro
+		ISBN
+		Titulo
+
+	Móvil
+		Marca
+		Modelo
+
+	Ropa
+		talla
+		color
+	
+Usuario
+	nombre
+	codigo_usuario
+	contraseña
+
+	Admin
+		crearUsuarios
+	
+	Cliente
+		carritoCompra [10]
+		vip
+		pagar()
+		
+	
+Tienda
+	nombre
+	usuarios [10] - Al menos 1 administrador
+	Productos
+	
+
+Pedir usuario y contraseña
+Admin
+	Dar de alta producto
+	Dar de alta usuario (si tiene permisos)
+
+Cliente
+	Tipos --> Seleccione --> Producto y cantidad(opcional)
+	Pagar
+
+
+
+
+
+
+
+
+
+
