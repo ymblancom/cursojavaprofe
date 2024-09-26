@@ -28,7 +28,8 @@ public class Tambor extends Instrumento {
 
 	@Override
 	public void afinar() {
-		setAfinado(true);
+		super.setAfinado(true);
+		System.out.println("Tambor afinado correctamente");
 	}
 	
 	

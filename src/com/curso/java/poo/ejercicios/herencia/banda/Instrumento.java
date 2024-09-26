@@ -49,14 +49,16 @@ public abstract class Instrumento {
 
 
 	public void afinar() {
-//		double numeroAleatorio = Math.random();
-//		if(numeroAleatorio>0.4) {
-//			this.afinado = true;
-//		}else {
-//			this.afinado = false;
-//		}
+		double numeroAleatorio = Math.random();
+		if(numeroAleatorio>0.4) {
+			System.out.println(nombre + " afinado correctamente");
+			this.afinado = true;
+		}else {
+			System.out.println(nombre + " no se ha afinado bien");
+			this.afinado = false;
+		}
 		
-		this.afinado = Math.random()>0.4;
+		//this.afinado = Math.random()>0.4;
 	}
 	
 	public void tocar() {

@@ -1,23 +1,34 @@
 package com.curso.java.poo.ejercicios.herencia.banda;
 
 public class BandaMusica {
+	private String nombreBanda;
+	
+	public BandaMusica(String nombreBanda) {
+		super();
+		this.nombreBanda = nombreBanda;
+	}
 
 	public static void main(String[] args) {
-		BandaMusica banda = new BandaMusica();
+		//System.out.println(this.nombreBanda);
+		BandaMusica banda = new BandaMusica("The Beatles");
+		banda.nombreBanda="Guns N´ Roses";
 		banda.empezarConcierto();
 	}
 
 	private void empezarConcierto() {
+		System.out.println("Empezando el concierto de "+this.nombreBanda);
 		Instrumento[] instrumentos = crearInstrumentos();
 		afinarInstrumentos(instrumentos);
+		tocarInstrumentos(instrumentos);
+		System.out.println("Concierto finalizado");
 	}
 	
 	private Instrumento[] crearInstrumentos() {
 		System.out.println("Creando instrumentos");
-		Guitarra guitarra = new Guitarra("Guitarra1","Tipo");
-		Guitarra guitarraElectrica = new GuitarraElectrica("Guitarra1","Tipo",false,150);
+		Instrumento guitarra = new Guitarra("Guitarra1","Tipo");
+		Guitarra guitarraElectrica = new GuitarraElectrica("GuitarraElectrica1","Tipo",false,150);
 		Piano piano = new Piano("Paino1", "Cuerda", false, 7, "De cola");
-		Tambor tambor = new Tambor("TAmbor1","",false,"Ojalata");
+		Instrumento tambor = new Tambor("Tambor1","",false,"Hojalata");
 		
 		Instrumento[] instrumentos = {guitarra, guitarraElectrica, piano, tambor};
 		System.out.println("Creados  "+ instrumentos.length + " instrumentos");
@@ -33,5 +44,30 @@ public class BandaMusica {
 		System.out.println("Instrumentos Afinados");
 	}
 	
+	private void tocarInstrumentos(Instrumento[] instrumentos) {
+		System.out.println("Tocando instrumentos");
+		boolean instrumentosAfinados = true;
+		for (Instrumento instrumento : instrumentos) {
+			//System.out.println(instrumento.getClass().getName());
+			//if(instrumento.getClass().getName().contains("Tambor")) {
+			if (instrumento instanceof Tambor) {
+				//Cast
+				((Tambor)instrumento).aporrear();
+			}else {
+				instrumento.tocar();
+			}
+			
+			if (!instrumento.isAfinado()) {
+				instrumentosAfinados=false;
+			}
+		}
+		if (instrumentosAfinados) {
+			System.out.println("La banda ha tocado muy bien!!!");
+		}else {
+			System.out.println("La banda ha tocado regular");
+		}
+		
+		System.out.println("Se ha terminado de tocar");
+	}
 }
 

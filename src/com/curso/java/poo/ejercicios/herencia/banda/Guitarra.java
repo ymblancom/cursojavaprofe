@@ -28,7 +28,7 @@ public class Guitarra extends Instrumento {
 
 	@Override
 	public void limpiar() {
-		System.out.println("La guitarra se está limpiando con un pañito");
+		System.out.println("La guitarra "+ getNombre() +" se está limpiando con un pañito");
 	}
 
 	@Override
