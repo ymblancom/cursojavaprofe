@@ -28,7 +28,7 @@ public class Utilidades {
 		Scanner scan = new Scanner(System.in);
 		dato = scan.nextInt();
 
-		calculaAnioNacimiento(28);
+		//calculaAnioNacimiento(28);
 		
 		return dato;
 	}

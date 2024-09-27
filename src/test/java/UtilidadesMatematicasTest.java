@@ -24,9 +24,16 @@ public class UtilidadesMatematicasTest {
 	}
 	
 	
-	@Test
+	@Test(timeout = 2000)
 	public void testOperacionMultiplicacion() {
 		double resultado = UtilidadesMatematicas.operacion(7, 5, "*");
+		
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Me he cansado de esperar y lo he parada");
+		}
 		
 		//assertEquals(35, resultado);
 		assertEquals(35, resultado, 0);
