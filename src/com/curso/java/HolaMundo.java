@@ -1,10 +1,12 @@
 package com.curso.java;
 
+import com.curso.java.utils.ConsoleColors;
+
 public class HolaMundo{
 
 	public static void main(String[] args) {
 
-		System.out.println("Hola Mundo");
+		System.out.println(ConsoleColors.GREEN_BACKGROUND+"Hola Mundo"+ConsoleColors.RESET);
 		
 		//Tipo objeto, o Arrays
 		String nombre = "Jose Luis";
