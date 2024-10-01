@@ -20,7 +20,7 @@ public class UtilidadesMatematicasTest {
 	public void testSumar() {
 		int resultado = UtilidadesMatematicas.sumar(2,3);
 		
-		assertEquals(5, resultado);
+		assertEquals(6, resultado);
 	}
 	
 	
