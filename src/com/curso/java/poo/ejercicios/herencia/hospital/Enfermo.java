@@ -26,7 +26,6 @@ public class Enfermo extends Persona {
 		this.enfermedad = enfermedad;
 	}
 	
-	
 
 	@Override
 	public String toString() {
@@ -38,4 +37,6 @@ public class Enfermo extends Persona {
 		System.out.println("El paciente " + super.getNombre() + " comiendo en la habitación");
 	}
 
+
+	
 }

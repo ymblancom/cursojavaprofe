@@ -31,11 +31,13 @@ public class Doctor extends EmpleadosHospital {
 	public Enfermo diagnosticarPaciente(Paciente paciente) {
 		System.out.println("El doctor "+ getNombre() +" está tratando al paciente "+ paciente.getNombre());
 		Enfermo enfermo = null;
-		if (Math.random()>0.8) {
+		if (Math.random()>0.1) {
 			String enfermedad = "COVID";
 			System.out.println("El paciente está muy malito tiene "+enfermedad + " deberá ser ingresado");
 			//enfermo = new Enfermo(paciente.getNombre(), paciente.getEdad(), "COVID");
 			enfermo = new Enfermo(paciente, enfermedad);
+		}else {
+			System.out.println("El paciente no está grave");
 		}
 		
 		

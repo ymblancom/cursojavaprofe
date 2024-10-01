@@ -21,21 +21,28 @@ public class Hospital {
 	}
 
 	public void abrirHospital() {
+		System.out.println("Abriendo el Hospital "+ this.nombre);
 		//Creamos los objetos
 		EmpleadosHospital[] empleados = crearEmpleadosHospital();
 		ficharEmpleados(empleados);
 		//ficharEmpleados(crearEmpleadosHospital());
 		crearEstancias();
+//		try {
+//			Enfermero e = (Enfermero)empleados[1];
+//		}catch(ClassCastException cce) {
+//			System.out.println("Error "+ cce.getMessage());
+//		}
 		triaje((Enfermero)empleados[0], (Doctor)empleados[1]);
 	}
 	
 	public void triaje (Enfermero enfermero, Doctor doctor) {
-		
+		System.out.println("Empieza el triaje de los pacientes");
 		for(int i=0 ; i<this.salaDeEspera.length   ; i++  ) {
 			Paciente paciente = this.salaDeEspera[i];
+			
 			this.salaDeEspera[i]=null;//Liberamos el asiento de la sala de espera (el paciente sale de la sala de espera)
 			
-			enfermero.atenderPaciente(paciente);
+			enfermero.atenderPaciente(paciente, doctor, this.habitaciones );
 			
 			
 			
