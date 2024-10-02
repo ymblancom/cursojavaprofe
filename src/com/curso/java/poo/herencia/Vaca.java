@@ -1,6 +1,8 @@
 package com.curso.java.poo.herencia;
 
-public class Vaca extends Animal{
+import com.curso.java.interfaces.Vendible;
+
+public class Vaca extends Animal implements Vendible{
 	private String tipo;
 
 	public Vaca(String id, String nombre, double peso, String tipo) {
@@ -29,6 +31,12 @@ public class Vaca extends Animal{
 	@Override
 	public String toString() {
 		return "Vaca [tipo=" + tipo + ", id=" + getId() + ", nombre=" + getNombre() + "]";
+	}
+
+	@Override
+	public void vender() {
+		System.out.println("Vendiendo a la vaca "+ getNombre());
+		
 	}
 	
 	
