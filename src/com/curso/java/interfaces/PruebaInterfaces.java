@@ -8,9 +8,12 @@ public class PruebaInterfaces {
 
 	public static void main(String[] args) {
 		Saxofon saxo = new Saxofon("Saxo1", "");
-		Guitarra guitarra = new Guitarra("Guitarra1", "");
+		Instrumento guitarra = new Guitarra("Guitarra1", "");
 		Vaca vaca1 = new Vaca("Lola", "", 0, "");
 		
+		Vendible vendible1 = new Saxofon("Saxo2", "");
+		//Vendible vendible2 = new Guitarra("Guitarra1", "");
+		Saxofon saxo2 = (Saxofon)vendible1;
 		PruebaInterfaces pi = new PruebaInterfaces();
 		pi.limpiar(saxo);
 		pi.limpiar(guitarra);

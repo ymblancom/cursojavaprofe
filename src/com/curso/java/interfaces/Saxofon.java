@@ -58,9 +58,17 @@ public class Saxofon extends Instrumento implements Vendible, Interfaz3, Interfa
 
 	@Override
 	public void vender() {
-		System.out.println("Vendiendo Saxofon");
+		System.out.println("Vendiendo saxo "+getNombre());
 		
 	}
+
+	@Override
+	public void comprobarEstado() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
 	
 	
 	

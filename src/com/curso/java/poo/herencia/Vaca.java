@@ -38,6 +38,12 @@ public class Vaca extends Animal implements Vendible{
 		System.out.println("Vendiendo a la vaca "+ getNombre());
 		
 	}
+
+	@Override
+	public void comprobarEstado() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 }
