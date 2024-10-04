@@ -48,6 +48,7 @@ public class Utilidades {
 	 */
 	public static String pideDatoString(String pregunta) {
 		String texto = "";
+		System.out.println(pregunta);
 		// Crea un nuevo objeto Scanner que lee desde la entrada estándar
 		Scanner scan = new Scanner(System.in);
 
