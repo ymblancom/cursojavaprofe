@@ -1,0 +1,18 @@
+Juguete
+	nombre
+	precio
+	marca
+	
+	Tren
+		modelo
+	Muñeca
+		color
+
+Tienda 
+	main() --> abrirTienda()
+
+	4 objetos 2 trenes y 2 muñecas
+	Se meten en una lista
+	Mostrar el precio total de todos los juguetes de la lista
+	Cuando sea un tren, el modelo de tren
+	Preguntar por un color y borrar todas las muñecas de ese color
