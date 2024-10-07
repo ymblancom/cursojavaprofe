@@ -1,5 +1,6 @@
 package com.curso.java.colecciones.ejercicios.juguetes;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -67,7 +68,8 @@ public class Tienda {
 		Doll doll2 = new Doll("D2","BArbie",50,"azul");
 		Doll doll3 = new Doll("D3","Nenuco",50,"rojo");
 		
-		List<Juguete> juguetes = new CopyOnWriteArrayList();
+		//List<Juguete> juguetes1 = new CopyOnWriteArrayList();
+		List<Juguete> juguetes = new ArrayList();
 		juguetes.add(tren2);
 		juguetes.add(tren1);
 		juguetes.add(doll1);
