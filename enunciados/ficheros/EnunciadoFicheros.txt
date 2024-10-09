@@ -1,0 +1,4 @@
+Del directorio ejercicioficheros compartido, indicar
++Cuantos ficheros hay en el directorio
++El nombre de todos los ficheros que sean imágenes
++Mostrar el tamaño y nombre del fichero más grande
