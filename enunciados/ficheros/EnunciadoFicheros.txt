@@ -1,4 +1,13 @@
+Ejercicio1
+=========================================
 Del directorio ejercicioficheros compartido, indicar
 +Cuantos ficheros hay en el directorio
 +El nombre de todos los ficheros que sean imágenes
 +Mostrar el tamaño y nombre del fichero más grande
+
+Ejercicio2
+=========================================
+A partir del fichero fichero_datos.txt
+Cargar los alumnos del fichero en una lista
+Indicar cuantos alumnos hay
+Mostrar los datos de todos los alumnos
