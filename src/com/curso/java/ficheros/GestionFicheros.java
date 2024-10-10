@@ -10,8 +10,11 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import com.curso.java.poo.ejercicios.ejercicio1.Alumno;
 
 
 
@@ -19,23 +22,24 @@ public class GestionFicheros {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		crearArchivo("fichero.txt");
-		//String contenidoFichero = leerArchivo("fichero_datos.txt");
-		//System.out.println(contenidoFichero);
+		//crearArchivo2("fichero.txt");
+		String contenidoFichero = leerArchivo("fichero.txt");
+		System.out.println(contenidoFichero);
 	}
 
 	public static void crearArchivo(String nombre) {
 		File archivo = new File(nombre);
 		
-//		BufferedWriter buffer2 = null;
+		BufferedWriter buffer2 = null;
+
 //		try {
-//			FileWriter fw = new FileWriter(archivo, true);
-//			buffer2 = new BufferedWriter(fw);
+//			FileWriter fw = new FileWriter(archivo);	
+//			buffer2 = new BufferedWriter(fw,2000);
 //
 //			buffer2.append("Hola que tal amigos!\n")
 //			.append("Todo bien? yo escribiendo en un archivo...\n")
-//			.append("Hasta luego Lucas3!\n");
-//
+//			.append("Hasta luego Lucas4!\n");
+//			
 //		}catch(IOException ioe) {
 //			System.out.println("Error" + ioe.getMessage());
 //		}finally {
@@ -44,6 +48,8 @@ public class GestionFicheros {
 //			} catch (IOException e) {
 //				// TODO Auto-generated catch block
 //				e.printStackTrace();
+//			} catch (NullPointerException npe) {
+//				npe.printStackTrace();
 //			}
 //		}
 //		System.out.println("Fichero creado");
@@ -54,9 +60,9 @@ public class GestionFicheros {
 
 			buffer.append("Hola que tal amigos!\n")
 					.append("Todo bien? yo escribiendo en un archivo...\n")
-					.append("Hasta luego Lucas4!\n");
+					.append("Hasta luego Lucas6!\n");
 			// buffer.close();
-			System.out.println("El archivo se ha creado con �xito!");
+			System.out.println("El archivo se ha creado con éxito!");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -65,14 +71,14 @@ public class GestionFicheros {
 	public static void crearArchivo2(String nombre) {
 		File archivo = new File(nombre);
 		
-		try (PrintWriter buffer = new PrintWriter(archivo)) {
+		try (PrintWriter buffer = new PrintWriter("fichero.txt")) {
 			// try (PrintWriter buffer = new PrintWriter(new FileWriter(archivo))){
 
 			buffer.println("Hola que tal amigos!");
-			buffer.println("Todo bien? yo ac� escribiendo un archivo...");
+			buffer.println("Todo bien? yo aquí escribiendo un archivo...");
 			buffer.printf("Hasta luego %s! %s", "JoseLuis5", "Cadena");
 			// buffer.close();
-			System.out.println("El archivo se ha creado con �xito!");
+			System.out.println("El archivo se ha creado con éxito!");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -93,9 +99,26 @@ public class GestionFicheros {
 
             String linea;
             
+//            do {
+//            	linea = reader.readLine();
+//            	
+//            }while(linea!=null);
+            List<Alumno> listaAlumnos = new ArrayList();
             while ( (linea = reader.readLine()) != null){
-                sb.append(linea).append("\n");
+//            	//alumno1|1111A|A1|23
+//            	String[] datosAlumno = linea.split("|");
+//            	String nommbre = datosAlumno[0];
+//            	String dni = datosAlumno[1];
+//            	String apellido = datosAlumno[2];
+//            	int edad = Integer.parseInt(datosAlumno[3]);
+//            	
+//            	Alumno a = new Alumno(dni, nombre, apellido);
+//            	listaAlumnos.add(a);
+            	
+            	sb.append(linea).append("\n");
             }
+            System.out.println("Tamaño de la lista"+listaAlumnos.size());
+            
         } catch (IOException e) {
         	System.out.println("Error " + e.getMessage());
             //e.printStackTrace();
