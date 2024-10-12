@@ -1,0 +1,9 @@
+Teniendo en cuenta que || sirve para ver si una condición cumplu un valor u otro, hacer lo siguiente:
+
+Declarar una variable para guardar un nombre de un mes
+Indicar con que estación del año se corresponde
+
+Enero, Febrero, marzo --> Invierno
+Abril, mayo, Junio --> Primavera
+Julio, Agosto, septiembre --> Verano
+octube, noviembre, diciembre --> Otoño

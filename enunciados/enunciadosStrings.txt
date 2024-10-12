@@ -1,0 +1,87 @@
+Ejercicio 1
+==============================================================
+"    En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. 
+Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda...           "
+
+Tamaño del texto sin los espacios en blanco del principio y del final
+Mostrar la segunda frase del quijote
+Aparece la palabra Quijote??
+Cuantas comas aparecen en el texto
+
+String texto = "    En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda...           ";
+
+		// Tamaño del texto sin los espacios en blanco del principio y del final
+
+		System.out.println("Tamaño del Texto " +texto.trim().length());
+
+		// Mostrar la segunda frase del quijote
+
+		System.out.println(texto.substring(texto.indexOf(".")+1).trim());
+
+		// Aparece la palabra Quijote??//Tres formas diferentes de hacerlo
+		String respuesta = "";
+		if(texto.toLowerCase().contains("quijote")) {
+			respuesta = "SI";
+		}else {
+			respuesta = "NO";
+		}
+
+		System.out.println("Aparece la palabra quijote \n" +respuesta);
+		
+		//Operadores ternarios
+		
+		String respuestaternario = texto.toLowerCase().contains("quijote")?"SI":"NO";
+		System.out.println("Aparece la palabra quijote \n"+respuestaternario);
+		
+		System.out.println( "Aparece la palabra quijote \n"+texto.toLowerCase().contains("quijote"));
+		
+		//Cuantas comas aparecen en el texto
+		
+		int contador = 0;
+		for(int i=0; i<texto.length(); i++) {
+			if(texto.charAt(i)==',') {
+				contador++;
+			}
+			
+		}
+		
+		System.out.println("Número de comas = "+contador );
+	}
+
+}
+
+
+
+Ejercicio 2: Validar email
+==============================================================
+Itroduce tu email (a partir de un email proporcionado). Vamos a validar si el email es correcto o no. Para ello vamos a pasar las siguientes validaciones
+   asdasd@as.dasd.easdasdasdsad   
+
+1. El email solo contiene una @
+2. El email no puede contener espacios en blanco 
+3. Despues de la @ debe de haber al menos un punto
+4. Entre la @ y el primer punto que esté depués tiene que haber una separación de 2 caracteres
+5. Después del último punto tiene que haber entre 2 y 5 caracteres
+
+Si no cumple validación se indica por qué
+
+
+Más complicado
+===========================
+Si el email es incorrecto preguntarle al usuario por un nuevo email hasta que sea correcto
+
+
+Ejercicio 3: 
+==============================================================
+Encontrar la palabra más larga: Identifica la palabra más larga en el texto.
+Encontrar la palabra que mas se repite en el texto
+Invertir las palabras: Invierte cada palabra en el texto manteniendo el orden original de las palabras.
+
+
+
+
+
+
+
+
+
